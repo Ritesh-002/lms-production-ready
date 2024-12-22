@@ -3,7 +3,7 @@ import axios from "axios";
 // import { config } from "dotenv";
 // config()
 
-const base_url = 'http://localhost:5014/api/v1'
+const base_url = 'https://lms-production-ready-3.onrender.com/api/v1'
 
 const axiosInstance = axios.create();
 
