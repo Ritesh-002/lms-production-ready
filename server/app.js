@@ -17,14 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 
 const _dirname = path.resolve()
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5174'); // Allow requests from http://localhost:5174
+  res.setHeader('Access-Control-Allow-Origin', 'https://lms-production-ready-3.onrender.com'); // Allow requests from http://localhost:5174
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
 });
 app.use(
   cors({
-    origin: ['http://localhost:5174'],
+    origin: "https://lms-production-ready-3.onrender.com",
     credentials: true,
   })
 );
